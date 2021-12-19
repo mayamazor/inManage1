@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:text="Registration"
+        android:textColor="#3D84B3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_fullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+    />
+
+
+
+
+
+    ]]>
+
+    <EditText
+        android:id="@+id/register_fullName"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:autoText="false"
+        android:background="@drawable/buttons"
+        android:ems="10"
+        android:hint="full name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#1D000000"
+        app:layout_constraintBottom_toTopOf="@+id/register_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_register"
+        tools:text="@tools:sample/full_names" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="273dp"
+        android:background="@drawable/buttons"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#1D000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_fullName"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttons"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#1D000000"
+        app:layout_constraintEnd_toStartOf="@+id/register_password2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <EditText
+        android:id="@+id/register_password2"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttons"
+        android:ems="10"
+        android:hint="verify  password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#1D000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <Button
+        android:id="@+id/register_continue"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons"
+        android:radius="50dp"
+        android:text="next"
+        android:textAlignment="center"
+        android:textColor="#131111"
+        app:backgroundTint="#3D84B3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
